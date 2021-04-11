@@ -19,7 +19,7 @@ npm install --save ts-is-fns
 
 ## Documentation
 
-####isEqual(objectA: any, objectB: any, options: IsEqualOptions)
+#### isEqual(objectA: any, objectB: any, options: IsEqualOptions)
 Checks if the `objectA` shallowly or deeply equal `objectB`;
 - `objectA, objectB` - any mergeable object
 - `IsEqualOptions` - object with following properties:
@@ -28,32 +28,32 @@ Checks if the `objectA` shallowly or deeply equal `objectB`;
     - `skipKeys?: string[]` - keys to skip check
     - `deepKeys?: string[]` - keys for deep check (only actual when `deep` is false)
 
-####isNull(value: any)
+#### isNull(value: any)
 Checks if the `value` is strictly null
 
-####isUndefined(value: any)
+#### isUndefined(value: any)
 Checks if the `value` is strictly undefined
 
-####isNumber(value: any)
+#### isNumber(value: any)
 Checks if the `value` is number
 
-####isInteger(value: any)
+#### isInteger(value: any)
 Checks if the `value` is integer
 
-####isString(value: any)
+#### isString(value: any)
 Checks if the `value` is string
 
-####isMergeable(value: any)
+#### isMergeable(value: any)
 Checks if the `value` is mergeable
 
-####isObject(value: any)
+#### isObject(value: any)
 Checks if the `value` is object and not array
 
-####isArray(value: any)
+#### isArray(value: any)
 Checks if the `value` is array
 
-####isFunction(value: any)
+#### isFunction(value: any)
 Checks if the `value` is function
 
-####isPromise(value: any)
+#### isPromise(value: any)
 Checks if the `value` is promise
