@@ -12,7 +12,9 @@
   },
   "keywords": [
     "is",
-    "checks"
+    "check",
+    "checks",
+    "typescript"
   ],
   "author": "Antonov Andrew <wtnm@rambler.ru> (https://github.com/wtnm)",
   "license": "MIT",

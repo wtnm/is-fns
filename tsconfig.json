@@ -32,13 +32,11 @@
     }
   },
   "include": [
-    "./admin/**/*",
-    "./src/**/*",
-    "./server/**/*"
+    "./**/*",
   ],
   "awesomeTypescriptLoaderOptions": {
     "reportFiles": [
-      "./src/**/*"
+      "./**/*"
     ]
   },
   "exclude": [
