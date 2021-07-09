@@ -34,6 +34,9 @@ Checks if the `value` is strictly null
 #### isUndefined(value: any)
 Checks if the `value` is strictly undefined
 
+#### isBool(value: any)
+Checks if the `value` is boolean
+
 #### isNumber(value: any)
 Checks if the `value` is number
 
@@ -48,6 +51,12 @@ Checks if the `value` is mergeable
 
 #### isObject(value: any)
 Checks if the `value` is object and not array
+
+#### isEmpty(value: any)
+Checks if the `value` is mergeable and has no own properties
+
+#### isSimpleObject(value: any)
+Checks if the `value` is object, not array and has no consturctor (i.e. constructor === Object)
 
 #### isArray(value: any)
 Checks if the `value` is array

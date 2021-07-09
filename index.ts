@@ -3,11 +3,14 @@ const isUndefined = (value: any): value is undefined => typeof value === 'undefi
 const isNumber = (value: any): value is number => typeof value === "number";
 const isInteger = (value: any) => typeof value === "number" && (Math.floor(value) === value || value > 9007199254740992 || value < -9007199254740992);
 const isString = (value: any): value is string => typeof value === 'string';
+const isBool = (value: any): value is boolean => value === false || value === true;
 
+const isEmpty = (value: any): value is any => isMergeable(value) && Object.keys(value).length === 0;
 const isObject = (value: any): value is any => isMergeable(value) && !isArray(value);
 const isArray = Array.isArray;
 const isFunction = (value: any): value is Function => typeof value === 'function';
 const isPromise = (value: any): value is Promise<any> => isFunction(value?.then);
+const isSimpleObject = (value: any): value is any => isObject(value) && value.constructor === Object
 
 const _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol"
   ? (obj: any) => typeof obj
@@ -66,4 +69,4 @@ function isEqual(objA: any, objB: any, options: IsEqualOptions = {}) {
 }
 
 
-export {is, isEqual, isMergeable, isNull, isUndefined, isNumber, isInteger, isString, isObject, isArray, isFunction, isPromise}; // is-fns
+export {is, isEqual, isMergeable, isBool, isNull, isUndefined, isNumber, isInteger, isString, isObject, isSimpleObject, isArray, isEmpty, isFunction, isPromise}; // is-fns
