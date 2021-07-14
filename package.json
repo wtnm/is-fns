@@ -1,6 +1,6 @@
 {
   "name": "is-fns",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "a bunch of functions to make various checks",
   "main": "dist/index.js",
   "scripts": {

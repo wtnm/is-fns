@@ -10,7 +10,7 @@ const isObject = (value: any): value is any => isMergeable(value) && !isArray(va
 const isArray = Array.isArray;
 const isFunction = (value: any): value is Function => typeof value === 'function';
 const isPromise = (value: any): value is Promise<any> => isFunction(value?.then);
-const isSimpleObject = (value: any): value is any => isObject(value) && value.constructor === Object
+const isPlainObject = (value: any): value is any => isObject(value) && value.constructor === Object
 
 const _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol"
   ? (obj: any) => typeof obj
@@ -69,4 +69,4 @@ function isEqual(objA: any, objB: any, options: IsEqualOptions = {}) {
 }
 
 
-export {is, isEqual, isMergeable, isBool, isNull, isUndefined, isNumber, isInteger, isString, isObject, isSimpleObject, isArray, isEmpty, isFunction, isPromise}; // is-fns
+export {is, isEqual, isMergeable, isBool, isNull, isUndefined, isNumber, isInteger, isString, isObject, isPlainObject, isArray, isEmpty, isFunction, isPromise}; // is-fns
