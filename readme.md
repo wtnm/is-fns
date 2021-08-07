@@ -7,14 +7,14 @@
 <!-- tocstop -->
 
 ## Overview
-`ts-is-fns` - a bunch of functions to make various checks
+`is-fns` - a bunch of functions to make various checks
 
 ## Installation
 
 To install the stable version:
 
 ```
-npm install --save ts-is-fns
+npm install --save is-fns
 ```
 
 ## Documentation
